@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>APLICACIÓN WEB DE DJ CON AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+</head>
+<body background="200w.gif">
+<center>
+  	<h3 class="btn heading">APLICACIÓN WEB DE DJ CON AI
+	    <br>
+	    <span class="note">NOTA: Mueve la muñeca de tu mano izquierda hacia arriba y hacia abajo para subir o bajar el volumen. 
+        Mueve la muñeca de tu mano derecha hacia arriba y hacia abajo para aumentar o disminuir la velocidad de la música.</span>
+  	</h3>
+	<br><br>
+  <div class="div_speed">
+    <img src="disk.gif" class="div_speed_img">
+    <br>
+    <h3 class="btn btn-primary" id="speed">Velocidad</h3>
+  </div>
+  <br><br>
+  <div class="div_volume">
+    <img src="disk.gif" class="div_volume_img">
+    <br>
+    <h3 class="btn btn-success" id="volume">volumen</h3>
+  </div>
+  <br><br>
+  <button onclick="play()" class="btn btn-success play_button">Reproducir</button>
+</center>
+
+<script src="main.js"></script>
+</body>
+</html>
